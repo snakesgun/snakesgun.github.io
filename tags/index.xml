@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on snakesgun - A biomedical coder</title>
+    <link>https://page.snakesgun.xyz/tags/</link>
+    <description>Recent content in Tags on snakesgun - A biomedical coder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://page.snakesgun.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DL</title>
+      <link>https://page.snakesgun.xyz/tags/dl/</link>
+      <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
+      
+      <guid>https://page.snakesgun.xyz/tags/dl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://page.snakesgun.xyz/tags/python/</link>
+      <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
+      
+      <guid>https://page.snakesgun.xyz/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pytorch</title>
+      <link>https://page.snakesgun.xyz/tags/pytorch/</link>
+      <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
+      
+      <guid>https://page.snakesgun.xyz/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

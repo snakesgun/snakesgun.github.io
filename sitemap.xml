@@ -1,0 +1,73 @@
+<?xml-stylesheet type="text/xsl" href="https://page.snakesgun.xyz/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/categories/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/tags/dl/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/post/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/tags/python/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/tags/pytorch/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/categories/study/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/tags/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/post/deep_learning_0/</loc>
+    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/about/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
