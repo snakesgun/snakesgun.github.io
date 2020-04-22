@@ -30,12 +30,13 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Your Name</title>
       <link>https://page.snakesgun.xyz/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://page.snakesgun.xyz/about/</guid>
-      <description>关于我自己</description>
+      <description>Personal summary  My research interests are &amp;hellip; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Education  M.A. Subject (grade), University name and location B.A. Subject (grade), University name and location A Level Subject (grade), University name and location  Technical  Intermediate: HTML, Python, etc, etc Basic: CSS, Stata, etc, etc  Employment  2015: Job title, Company   In this role I&amp;hellip;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
     </item>
     
   </channel>
