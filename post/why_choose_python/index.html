@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>编程杂谈 - 我为什么选择 Python - snakesgun - A biomedical coder</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="snakesgun" /><meta name="description" content="从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C&#43;&#43;，JAVA，再到" /><meta name="keywords" content="Python, Deep Learning, Pytorch, Biomedical, NLP, Paper" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.0 with theme even" />
+
+
+<link rel="canonical" href="https://page.snakesgun.xyz/post/why_choose_python/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.8c3cbcb0324c2bb4875ceccba4007cbad4b4ac8377f33af9953c3e7684534a50.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="编程杂谈 - 我为什么选择 Python" />
+<meta property="og:description" content="从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C&#43;&#43;，JAVA，再到" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://page.snakesgun.xyz/post/why_choose_python/" />
+<meta property="article:published_time" content="2017-01-18T15:43:48+08:00" />
+<meta property="article:modified_time" content="2017-06-18T15:43:48+08:00" />
+<meta itemprop="name" content="编程杂谈 - 我为什么选择 Python">
+<meta itemprop="description" content="从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C&#43;&#43;，JAVA，再到">
+<meta itemprop="datePublished" content="2017-01-18T15:43:48&#43;08:00" />
+<meta itemprop="dateModified" content="2017-06-18T15:43:48&#43;08:00" />
+<meta itemprop="wordCount" content="1943">
+
+
+
+<meta itemprop="keywords" content="Python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="编程杂谈 - 我为什么选择 Python"/>
+<meta name="twitter:description" content="从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C&#43;&#43;，JAVA，再到"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Snakesgun</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Snakesgun</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">编程杂谈 - 我为什么选择 Python</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-01-18 </span>
+        <div class="post-category">
+            <a href="/categories/discuss/"> Discuss </a>
+            </div>
+          <span class="more-meta"> 约 1943 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C++，JAVA，再到现在选择Python做为自己的主要工作语言。对于我自身整体需求的改变也从模糊逐渐变得清晰。</p>
+<p>述说某种语言的好坏在程序员的圈子中是大忌，极有可能引发激烈的争论。就像vim和emacs的常年党争，在论坛中引得一番激烈讨论。所以，我还是声明一下比较好，本篇文章仅仅是记录一下这些年来自己和周围的一些变化，以期能带给后来的同志们一些有意义的参考。</p>
+<p>当然，不能忘记的是：</p>
+<p><em>php是世界上最好的编程语言</em></p>
+<p><em>php是世界上最好的编程语言</em></p>
+<p><em>php是世界上最好的编程语言</em></p>
+<p>重要的事情说三遍 <em>^__^</em></p>
+<p>最早开始系统的学习编程和写代码是从初中开始的，遥想当年的编程环境也是感人，用着机房万年不换的机器，在 Win95 的机器上做着不明所以的题目。可能这就是我最初对编程的概念，既不理解也不深入。那为啥要学呢？其实也是受 CCTV7 频道（没错，就是给我们讲解如何用真理说服人的农业军事频道）的一档编程教学节目的影响，对编程这件事情产生了莫名的好感，具体的节目名字现在已经忘记了，也不知道节目中的老师和三位同学目前在何处高就。不过这档节目给我留下的印象可是相当深刻，看着满屏的Basic代码，要是没记错的应该叫 QBasic，外加绚烂多彩（以当时的视角来看）的实现效果，简直是不能更高大上了。所以初中三年级的时候，学校那边要组织一个队伍去参加地区的 NOIP 比赛，我也就顾不上快中考了这件事，直接报名参加了。学习的编程语言是Pascal，这个名字在我工作后和一些IT公司的从业人员交流的时候，甚至有些人是不知道的。看来这东东是有些古老了，不过 Pascal 还是有其特点的。那就是非常严格的格式要求，以及非常清晰的定义，甚至过程和函数都是独立的两个东西。而且在后来学习其他编程语言之后，发现 Pascal 在当时的条件下，作为学习和教学的语言还真是合适。清晰的结构，简单的逻辑过程，用来上课真是再合适不过了。就这样 Pascal 伴随我直到高中毕业。</p>
+<p>上大学时，我最终选了生物科学方向（毕竟，21世纪是生物科学的世纪【惨笑】），同时也选修了 C/C++/Java 什么的，学校开设的所有和编程有关的公选课我都选了，有时候还会去计算机学院蹭课。不过这也就处于一种学过，刚刚会用的状态，随着三年级要进实验室，也就没再有更多的接触（毕竟实验狗伤不起）。当然，不出所料的，作为手残党，生物实验快把我做吐了，最后义无反顾的走上了生物信息的道路。开始做生物信息之后，也终于为了解决实际问题来开始写代码了。这期间，我确实有一些自己的迷茫，也陷入了什么语言才是高大上的语言这种奇怪的争论之中，我到底是该选 C，C++，Java 还是 Perl 作为主要的工作语言呢？C 大牛写出来的工具真是优美，C++ 要是全学会了岂不是逼格甚高，Java 真是挣钱吃饭的好家伙，Perl…算了不说 Perl 了。</p>
+<p>工作上有迷茫，那么生活中可定会找到精力集中的娱乐。所以那段时间我开始花时间在EVE的游玩中。不过就是这次不算是沉迷网游的沉迷，让我和 Python 有了第一次接触，玩过 EVE 的可能知道 EVE 里面的战舰很多，武器也很多，武器需要耗电，而且武器和战舰都很耗费资源，所以大家在生产新舰的时候都喜欢先搭配一下看看最终效果到底如何。有这么一款工具（EVE fitting tool）就是做这件事的。这个工具就是爱好者用 Python 写的，我在朋友的指导下也开始自己配置这个工具，当我看到里面的代码的时候，我被这种不需要分号换行的语言和漂亮的结构吸引了。再后来 EVE 就被我抛到一边了，还是 Python 好玩儿，就这样，我一点点开始了 Python 的使用和研究。许多在其他 native language 需要很复杂的实现，在 Python 中往往都能很快搞定，而且效率还不错。当时来看，也算是 Python 神教的坚定支持者了。后来，看的书多了，接触到的技术和优秀的文章也渐渐多了起来，哪种语言好这种问题也就渐渐不去想了，毕竟语言只是工具，只要在合适的问题中选择合适的工具来解决就好。如果解决某些问题用 Excel 最方便，那还费力请出R或者SPSS岂不是是大材小用。</p>
+<p>至于，我为什么选择用 Python 作为我的日常工作语言，主要是从以下三点出发：</p>
+<p>其一，简洁的语法特性，不存在非常难以理解的语言编写方式。这点倒不是给书写提供了多少便利，主要是现在的工作中互相交换代码进行改进的需要有很多，所以自己所写的代码，在提供了足够的注释后，能方便别人把代码读懂很重要，这点上Python这个语言做的很好。</p>
+<p>其二，丰富的扩展模块，pip 安装轻松惬意，有丰富的轮子供大家选用，不用自己重复造轮子。</p>
+<p>其三，快速实现性。由于 Python 语言简洁清晰的语法特性以及丰富的自身功能，在实现想法设计的时候有着其他编程语言所不及的优势就是实现快。这在现在工作思路设计迭代速度迅速的情况下是非常重要的特点。</p>
+<p>以上这些就是我为什么选择 Python 作为主要的工作语言的原因。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">snakesgun</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2017-06-18
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/python/">Python</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/deep_learning_0/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">从零开始的深度学习 - 第0篇</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:snakesgun@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/snakesgun" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/snakesgun" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/463563" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://page.snakesgun.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2015 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">snakesgun</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.f3982787498bde362e62b5de507d1714dc64c83a09ad4958598bce2c039150a5.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      TeX: {equationNumbers: {autoNumber: "AMS"}},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

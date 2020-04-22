@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discuss on snakesgun - A biomedical coder</title>
+    <link>https://page.snakesgun.xyz/categories/discuss/</link>
+    <description>Recent content in Discuss on snakesgun - A biomedical coder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Jan 2017 15:43:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://page.snakesgun.xyz/categories/discuss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>编程杂谈 - 我为什么选择 Python</title>
+      <link>https://page.snakesgun.xyz/post/why_choose_python/</link>
+      <pubDate>Wed, 18 Jan 2017 15:43:48 +0800</pubDate>
+      
+      <guid>https://page.snakesgun.xyz/post/why_choose_python/</guid>
+      <description>从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C++，JAVA，再到</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -65,6 +65,20 @@
   </url>
   
   <url>
+    <loc>https://page.snakesgun.xyz/categories/discuss/</loc>
+    <lastmod>2017-06-18T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://page.snakesgun.xyz/post/why_choose_python/</loc>
+    <lastmod>2017-06-18T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://page.snakesgun.xyz/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -20,5 +20,14 @@
       <description>前言 对于一门知识的学习，只定下目标是完全不够的，更主要的还看有怎样的行动力来完成这样的学习目标。在中学乃至大学的大部分阶段，对我们自身来讲多</description>
     </item>
     
+    <item>
+      <title>编程杂谈 - 我为什么选择 Python</title>
+      <link>https://page.snakesgun.xyz/post/why_choose_python/</link>
+      <pubDate>Wed, 18 Jan 2017 15:43:48 +0800</pubDate>
+      
+      <guid>https://page.snakesgun.xyz/post/why_choose_python/</guid>
+      <description>从第一次接触代码到现在断断续续也算是写了快12年代码了。接触过的编程语言从开始的Basic，Pascal，到后来的C，C++，JAVA，再到</description>
+    </item>
+    
   </channel>
 </rss>
