@@ -1,85 +1,85 @@
-<?xml-stylesheet type="text/xsl" href="https://page.snakesgun.xyz/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://blog.snakesgun.me/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://page.snakesgun.xyz/categories/</loc>
+    <loc>https://blog.snakesgun.me/categories/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/tags/dl/</loc>
+    <loc>https://blog.snakesgun.me/tags/dl/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/post/</loc>
+    <loc>https://blog.snakesgun.me/post/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/tags/python/</loc>
+    <loc>https://blog.snakesgun.me/tags/python/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/tags/pytorch/</loc>
+    <loc>https://blog.snakesgun.me/tags/pytorch/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/</loc>
+    <loc>https://blog.snakesgun.me/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/categories/study/</loc>
+    <loc>https://blog.snakesgun.me/categories/study/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/tags/</loc>
+    <loc>https://blog.snakesgun.me/tags/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/post/deep_learning_0/</loc>
+    <loc>https://blog.snakesgun.me/post/deep_learning_0/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/categories/discuss/</loc>
+    <loc>https://blog.snakesgun.me/categories/discuss/</loc>
     <lastmod>2017-06-18T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/post/why_choose_python/</loc>
+    <loc>https://blog.snakesgun.me/post/why_choose_python/</loc>
     <lastmod>2017-06-18T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://page.snakesgun.xyz/about/</loc>
+    <loc>https://blog.snakesgun.me/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

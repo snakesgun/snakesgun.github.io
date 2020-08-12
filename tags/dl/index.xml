@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DL on snakesgun - A biomedical coder</title>
-    <link>https://page.snakesgun.xyz/tags/dl/</link>
+    <link>https://blog.snakesgun.me/tags/dl/</link>
     <description>Recent content in DL on snakesgun - A biomedical coder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate>
     
-	<atom:link href="https://page.snakesgun.xyz/tags/dl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.snakesgun.me/tags/dl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>从零开始的深度学习 - 第0篇</title>
-      <link>https://page.snakesgun.xyz/post/deep_learning_0/</link>
+      <link>https://blog.snakesgun.me/post/deep_learning_0/</link>
       <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
       
-      <guid>https://page.snakesgun.xyz/post/deep_learning_0/</guid>
+      <guid>https://blog.snakesgun.me/post/deep_learning_0/</guid>
       <description>前言 对于一门知识的学习，只定下目标是完全不够的，更主要的还看有怎样的行动力来完成这样的学习目标。在中学乃至大学的大部分阶段，对我们自身来讲多</description>
     </item>
     

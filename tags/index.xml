@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on snakesgun - A biomedical coder</title>
-    <link>https://page.snakesgun.xyz/tags/</link>
+    <link>https://blog.snakesgun.me/tags/</link>
     <description>Recent content in Tags on snakesgun - A biomedical coder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate>
     
-	<atom:link href="https://page.snakesgun.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.snakesgun.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DL</title>
-      <link>https://page.snakesgun.xyz/tags/dl/</link>
+      <link>https://blog.snakesgun.me/tags/dl/</link>
       <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
       
-      <guid>https://page.snakesgun.xyz/tags/dl/</guid>
+      <guid>https://blog.snakesgun.me/tags/dl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://page.snakesgun.xyz/tags/python/</link>
+      <link>https://blog.snakesgun.me/tags/python/</link>
       <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
       
-      <guid>https://page.snakesgun.xyz/tags/python/</guid>
+      <guid>https://blog.snakesgun.me/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pytorch</title>
-      <link>https://page.snakesgun.xyz/tags/pytorch/</link>
+      <link>https://blog.snakesgun.me/tags/pytorch/</link>
       <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
       
-      <guid>https://page.snakesgun.xyz/tags/pytorch/</guid>
+      <guid>https://blog.snakesgun.me/tags/pytorch/</guid>
       <description></description>
     </item>
     
