@@ -6,10 +6,15 @@
     <description>Recent content on snakesgun - A biomedical coder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.snakesgun.me/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 04 Dec 2020 20:44:40 +0800</lastBuildDate><atom:link href="https://blog.snakesgun.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pipx - 为 Python 应用构建独立的安装与运行环境</title>
+      <link>https://blog.snakesgun.me/post/pipx_introducing/</link>
+      <pubDate>Fri, 04 Dec 2020 20:44:40 +0800</pubDate>
+      
+      <guid>https://blog.snakesgun.me/post/pipx_introducing/</guid>
+      <description>起因 在运用 Python 的过程中，我们不仅会使用丰富的 Python package，也会发现很多有用的工具，如：环境管理工具 pipenv，SQL 命令行客户端 mycl</description>
+    </item>
     
     <item>
       <title>从零开始的深度学习 - 第0篇</title>

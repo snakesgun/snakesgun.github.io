@@ -6,10 +6,24 @@
     <description>Recent content in Tags on snakesgun - A biomedical coder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 20:44:40 +0800</lastBuildDate><atom:link href="https://blog.snakesgun.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLI</title>
+      <link>https://blog.snakesgun.me/tags/cli/</link>
+      <pubDate>Fri, 04 Dec 2020 20:44:40 +0800</pubDate>
+      
+      <guid>https://blog.snakesgun.me/tags/cli/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://blog.snakesgun.me/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Python</title>
+      <link>https://blog.snakesgun.me/tags/python/</link>
+      <pubDate>Fri, 04 Dec 2020 20:44:40 +0800</pubDate>
+      
+      <guid>https://blog.snakesgun.me/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>DL</title>
@@ -17,15 +31,6 @@
       <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
       
       <guid>https://blog.snakesgun.me/tags/dl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://blog.snakesgun.me/tags/python/</link>
-      <pubDate>Wed, 12 Sep 2018 15:43:48 +0800</pubDate>
-      
-      <guid>https://blog.snakesgun.me/tags/python/</guid>
       <description></description>
     </item>
     

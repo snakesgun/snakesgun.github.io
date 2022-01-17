@@ -6,11 +6,7 @@
     <description>Recent content in Pytorch on snakesgun - A biomedical coder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.snakesgun.me/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 12 Sep 2018 15:43:48 +0800</lastBuildDate><atom:link href="https://blog.snakesgun.me/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>从零开始的深度学习 - 第0篇</title>
       <link>https://blog.snakesgun.me/post/deep_learning_0/</link>

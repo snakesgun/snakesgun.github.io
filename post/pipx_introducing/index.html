@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>pipx - 为 Python 应用构建独立的安装与运行环境 - snakesgun - A biomedical coder</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="snakesgun" /><meta name="description" content="起因 在运用 Python 的过程中，我们不仅会使用丰富的 Python package，也会发现很多有用的工具，如：环境管理工具 pipenv，SQL 命令行客户端 mycl" /><meta name="keywords" content="Python, Deep Learning, Pytorch, Biomedical, NLP, Paper" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.0 with theme even" />
+
+
+<link rel="canonical" href="https://blog.snakesgun.me/post/pipx_introducing/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="pipx - 为 Python 应用构建独立的安装与运行环境" />
+<meta property="og:description" content="起因 在运用 Python 的过程中，我们不仅会使用丰富的 Python package，也会发现很多有用的工具，如：环境管理工具 pipenv，SQL 命令行客户端 mycl" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.snakesgun.me/post/pipx_introducing/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-12-04T20:44:40+08:00" />
+<meta property="article:modified_time" content="2020-12-05T17:25:40+08:00" />
+
+<meta itemprop="name" content="pipx - 为 Python 应用构建独立的安装与运行环境">
+<meta itemprop="description" content="起因 在运用 Python 的过程中，我们不仅会使用丰富的 Python package，也会发现很多有用的工具，如：环境管理工具 pipenv，SQL 命令行客户端 mycl"><meta itemprop="datePublished" content="2020-12-04T20:44:40+08:00" />
+<meta itemprop="dateModified" content="2020-12-05T17:25:40+08:00" />
+<meta itemprop="wordCount" content="1030">
+<meta itemprop="keywords" content="Python,CLI," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="pipx - 为 Python 应用构建独立的安装与运行环境"/>
+<meta name="twitter:description" content="起因 在运用 Python 的过程中，我们不仅会使用丰富的 Python package，也会发现很多有用的工具，如：环境管理工具 pipenv，SQL 命令行客户端 mycl"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Snakesgun</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Snakesgun</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">pipx - 为 Python 应用构建独立的安装与运行环境</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-12-04 </span>
+        <div class="post-category">
+            <a href="/categories/tool/"> Tool </a>
+            </div>
+          <span class="more-meta"> 约 1030 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#起因">起因</a></li>
+    <li><a href="#安装">安装</a></li>
+    <li><a href="#使用">使用</a></li>
+    <li><a href="#进阶">进阶</a></li>
+    <li><a href="#个人总结">个人总结</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="起因">起因</h2>
+<p>在运用 Python 的过程中，我们不仅会使用丰富的 Python package，也会发现很多有用的工具，如：环境管理工具 <code>pipenv</code>，SQL 命令行客户端 <code>mycli</code>，下载工具 <code>you-get</code> 等。虽然 python 自带的 pip 工具为我们提供了丰富的安装与管理功能，同时在 virtualenv 的帮助下，我们并不是太担心 Python 的版本升级会对我们的开发环境产生太大的影响。但是，我们通过 pip 安装的 Python 实用工具，在版本升级的过程中并不能幸免。除非我们单独设置独立的，专门用于安装这些工具的虚拟环境。但是，么次安装都需要切换到虚拟环境，未免显得过于繁琐。难道就不能更给力一些嘛~~答案当然是肯定的。<code>pipx</code> 就是为了解决这样的困扰而诞生的。</p>
+<p>首先来看一个例子</p>
+<p><img src="https://raw.githubusercontent.com/pypa/pipx/main/pipx_demo.gif" alt="pipx example"></p>
+<p>有没觉得如此简单的，就像我们通过 <code>pip</code>，<code>pipenv</code> 等安装 package 一样简洁明了。同时 <code>pipx</code> 会为我们自动构建用于工具运行的虚拟环境，再也不用担心随着 Python 大版本的升级导致的工具丢失了。</p>
+<h2 id="安装">安装</h2>
+<p><code>MacOS</code> 可以通过 <code>Howbrew</code> 来安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">brew install pipx
+
+<span class="c1"># 将 pipx 虚拟环境下的 $PATH 加入到系统中</span>
+pipx ensurepath
+</code></pre></td></tr></table>
+</div>
+</div><p><code>Windows</code> 可以通过 <code>Scoop</code> 来安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="nf">scoop</span> <span class="nf">bucket</span> <span class="nf">add</span> <span class="nf">pipx-standalone</span> <span class="nf">https:</span><span class="err">/</span><span class="nv">/github.com/uranusjr/pipx-standalone.git</span>
+<span class="nf">scoop</span> <span class="nf">install</span> <span class="nf">pipx</span>
+
+<span class="nf">pipx</span> <span class="nf">ensurepath</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>Linux</code> 可以通过各发行版的包管理器来安装，这里以 <code>Ubuntu</code> 为例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update
+sudo apt-get install python-pipx
+
+pipx ensurepath
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="使用">使用</h2>
+<p>使用 <code>pipx</code> 非常简单! 安装需要的 Python 工具只需要运行如下命令即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pipx install <span class="o">[</span>PACKAGE-NAME<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>查看目前安装了哪些工具包</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pipx list
+</code></pre></td></tr></table>
+</div>
+</div><p>甚至可以<strong>不进行安装</strong>，直接在 pipx 所管理的虚拟环境中运行 Python 开发的 CLI 工具</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pipx run pycowsay moooo!
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="进阶">进阶</h2>
+<p><code>pipx</code> 同时提供很多扩展功能，可以通过运行 <code>pipx --help</code> 来进行查看</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ pipx --help
+usage: pipx <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>--version<span class="o">]</span>
+            <span class="o">{</span>install,inject,upgrade,upgrade-all,uninstall,uninstall-all,reinstall-all,list,run,runpip,ensurepath,completions<span class="o">}</span>
+            ...
+
+Install and execute apps from Python packages.
+
+Binaries can either be installed globally into isolated Virtual Environments
+or run directly in an temporary Virtual Environment.
+
+Virtual Environment location is ~/work/pipx/pipx/<span class="s2">&#34;/opt/pipx&#34;</span>/venvs.
+Symlinks to apps are placed in ~/work/pipx/pipx/<span class="s2">&#34;/opt/pipx_bin&#34;</span>.
+
+Optional Environment Variables:
+PIPX_HOME: Overrides default pipx location. Virtual Environments
+will be installed to <span class="nv">$PIPX_HOME</span>/venvs.
+PIPX_BIN_DIR: Overrides location of app installations. Apps are symlinked
+or copied here.
+USE_EMOJI: Override emoji behavior. Default value varies based on platform.
+PIPX_DEFAULT_PYTHON: Overrides default python used <span class="k">for</span> commands.
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  --version             Print version and <span class="nb">exit</span>
+
+subcommands:
+  Get <span class="nb">help</span> <span class="k">for</span> commands with pipx COMMAND --help
+
+  <span class="o">{</span>install,inject,upgrade,upgrade-all,uninstall,uninstall-all,reinstall-all,list,run,runpip,ensurepath,completions<span class="o">}</span>
+    install             Install a package
+    inject              Install packages into an existing Virtual Environment
+    upgrade             Upgrade a package
+    upgrade-all         Upgrade all packages. Runs <span class="sb">`</span>pip install -U &lt;pkgname&gt;<span class="sb">`</span>
+                        <span class="k">for</span> each package.
+    uninstall           Uninstall a package
+    uninstall-all       Uninstall all packages
+    reinstall-all       Reinstall all packages
+    list                List installed packages
+    run                 Download the latest version of a package to a
+                        temporary virtual environment, <span class="k">then</span> run an app from
+                        it. Also compatible with <span class="nb">local</span> <span class="sb">`</span>__pypackages__<span class="sb">`</span>
+                        directory <span class="o">(</span>experimental<span class="o">)</span>.
+    runpip              Run pip in an existing pipx-managed Virtual
+                        Environment
+    ensurepath          Ensure directories necessary <span class="k">for</span> pipx operation are in
+                        your PATH environment variable.
+    completions         Print instructions on enabling shell completions <span class="k">for</span>
+                        pipx
+</code></pre></td></tr></table>
+</div>
+</div><p>更多信息可查阅 <a href="https://pypa.github.io/pipx/">pipx 工具文档</a></p>
+<h2 id="个人总结">个人总结</h2>
+<p>就我个人来讲，作为一名 <code>pyenv</code> 与 <code>pipenv</code> 的深度使用者，有感于 Python 版本的调整虽然对开发环境的影响并不是很大，但是对于这些 CLI 工具还是会有一些影响的，总想着有没有一款工具可以满足这样的需求，即将所有的 Python 工具单独维护起来，这样就与我们的开发环境彻底分离开来，不再存在版本升级导致工具消失的问题了。如果操作与使用再简洁一些就更完美了，pipx 无疑解决了我的痛点。特向大家推荐~</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">snakesgun</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-12-05
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/python/">Python</a>
+          <a href="/tags/cli/">CLI</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/deep_learning_0/">
+            <span class="next-text nav-default">从零开始的深度学习 - 第0篇</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:snakesgun@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/snakesgun" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/snakesgun" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/463563" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://blog.snakesgun.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2015 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>snakesgun</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164213314-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

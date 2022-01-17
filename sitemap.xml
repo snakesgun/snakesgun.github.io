@@ -3,27 +3,62 @@
   
   <url>
     <loc>https://blog.snakesgun.me/categories/</loc>
-    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.snakesgun.me/tags/dl/</loc>
-    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <loc>https://blog.snakesgun.me/tags/cli/</loc>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.snakesgun.me/post/pipx_introducing/</loc>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.snakesgun.me/post/</loc>
-    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.snakesgun.me/tags/python/</loc>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.snakesgun.me/</loc>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.snakesgun.me/tags/</loc>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.snakesgun.me/categories/tool/</loc>
+    <lastmod>2020-12-05T17:25:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.snakesgun.me/tags/dl/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,21 +72,7 @@
   </url>
   
   <url>
-    <loc>https://blog.snakesgun.me/</loc>
-    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.snakesgun.me/categories/study/</loc>
-    <lastmod>2018-09-12T15:43:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.snakesgun.me/tags/</loc>
     <lastmod>2018-09-12T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
